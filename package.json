@@ -8,6 +8,7 @@
     "test": "test"
   },
   "scripts": {
+    "release": "./scripts/release.sh",
     "compile": "tsc -p tsconfig.json",
     "dev": "npm run watch",
     "watch": "tsc -w",
