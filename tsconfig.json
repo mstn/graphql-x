@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "rootDir": ".",
+    "outDir": "lib",
+    "allowSyntheticDefaultImports": true,
+    "allowUnusedLabels": false,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "lib": [
+      "esnext",
+      "es2016",
+      "dom"
+    ]
+  },
+  "files": [
+    "typings.d.ts",
+    "src/index.ts",
+    "test/index.ts"
+  ]
+}

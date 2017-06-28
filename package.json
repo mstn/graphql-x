@@ -1,0 +1,48 @@
+{
+  "name": "graphql-x",
+  "version": "0.1.0",
+  "description": "parallel execution of GraphQL queries",
+  "main": "./lib/src/index.js",
+  "typings": "./lib/src/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "tsc -p tsconfig.json",
+    "dev": "npm run watch",
+    "watch": "tsc -w",
+    "pretest": "npm run compile",
+    "test": "npm run testonly --",
+    "posttest": "npm run lint",
+    "testonly": "mocha --reporter spec --full-trace lib/test/index.js",
+    "lint": "grunt tslint"
+  },
+  "author": "mstn",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^0.10.3",
+    "rxjs": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.32",
+    "@types/chai-as-promised": "0.0.30",
+    "@types/mocha": "^2.2.32",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "colors": "^1.1.2",
+    "es6-promise": "^4.0.5",
+    "graphql-tag": "^2.4.2",
+    "grunt": "^1.0.1",
+    "grunt-tslint": "^5.0.1",
+    "mocha": "^3.1.2",
+    "source-map-support": "^0.4.5",
+    "tslint": "^5.4.3",
+    "typed-graphql": "^1.0.2",
+    "typescript": "^2.3.2"
+  },
+  "optionalDependencies": {
+    "@types/node": "^7.0.16",
+    "@types/promises-a-plus": "0.0.26",
+    "@types/graphql": "^0.9.0"
+  }
+}
